@@ -120,10 +120,10 @@ Array2.prototype = {
 		return this.length;
 	},
 	shift: function () {
-		return this.splice(0, 1);
+		return this.splice(0, 1)[0];
 	},
 	unshift: function () {
-		this.splice.apply(this, squaredBrackets(this.length, 0).concat(arguments));
+		this.splice.apply(this, squaredBrackets(0, 0).concat(arguments));
 		return this.length;
 	},
 	concat: function () {
