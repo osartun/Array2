@@ -4,6 +4,8 @@ function squaredBrackets() {
 }
 
 String.prototype.split2 = function (delimiter) {
+	// This is like "string".split, but returns an instance of Array2
+	// Poorly designed, but whatever.
 	var res = new Array2(0), lastIndex = 0, nextIndex, str = this, flags = "g", delStr;
 	if (Object.prototype.toString.call(delimiter) === "[object RegExp]") {
 		// get the current flags, if there are any
