@@ -11,12 +11,22 @@ This is just a test, a proof of concept if you will: It's possible to create the
     arr.push(5) // return: 4, arr: [1,2,3,5]
     arr.splice(3, 0, 4) // return: [], arr: [1,2,3,4,5]
     arr.shift() // return: 1, arr: [2,3,4,5]
-    arr.unshift() // return: 5, arr: [1,2,3,4,5]
+    arr.unshift(1) // return: 5, arr: [1,2,3,4,5]
     arr.reverse() // return: [5,4,3,2,1], arr: [1,2,3,4,5]
     var brr = arr.splice(0,3) // brr: [1,2,3], arr: [4,5]
     arr = brr.concat(arr) // arr: [1,2,3,4,5], brr: [1,2,3]
     arr.join(" ") // return: "1 2 3 4 5", arr: [1,2,3,4,5]
     arr.toString() // return: "1,2,3,4,5", arr: [1,2,3,4,5]
+    
+    // The simulation of the [bracket notation]
+    squaredBrackets(1,2,3,4) // [1,2,3,4]
+    
+    // difference:
+    squaredBrackets(5) // [5]
+    new Array(5) // [undefined × 5]
+    // If the Array2 constructor is called with only one argument 
+    // and this argument is a positive integer, this integer is 
+    // considered to indicate the length of the array
 
 ## Why should I use that?
 
