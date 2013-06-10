@@ -3,7 +3,20 @@ Array2
 
 An implementation of Array in JavaScript without ever using a native JavaScript-Array. It has the highly creative title "Array2".
 
-This is just a test, a proof of concept if you will: It's possible to create the complete functionality of a JavaScript-Array without using a native Array. It even works with Function.apply and everything!
+This is just a test, a proof of concept if you will: It's possible to create the functionality of a JavaScript-Array without using a native Array. It even works with Function.apply and everything! Just the bracket-notation `myArray[5]` won't change the length attribute.
+
+    var arr = new Array2(1,2,3,4); // [1,2,3,4]
+    arr.slice(2) // return: [3, 4], arr: [1,2,3,4]
+    arr.pop() // return: 4, arr: [1,2,3]
+    arr.push(5) // return: 4, arr: [1,2,3,5]
+    arr.splice(3, 0, 4) // return: [], arr: [1,2,3,4,5]
+    arr.shift() // return: 1, arr: [2,3,4,5]
+    arr.unshift() // return: 5, arr: [1,2,3,4,5]
+    arr.reverse() // return: [5,4,3,2,1], arr: [1,2,3,4,5]
+    var brr = arr.splice(0,3) // brr: [1,2,3], arr: [4,5]
+    arr = brr.concat(arr) // arr: [1,2,3,4,5], brr: [1,2,3]
+    arr.join(" ") // return: "1 2 3 4 5", arr: [1,2,3,4,5]
+    arr.toString() // return: "1,2,3,4,5", arr: [1,2,3,4,5]
 
 ## Why should I use that?
 
