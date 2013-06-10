@@ -24,3 +24,7 @@ Not at all. This is the result of a few hours of procrastination and curiosity.
 ## Who in the industry is using this?
 
 You just don't get it, don't you?!
+
+## There's no `sort` method
+
+Right. Didn't bother implementing this.
