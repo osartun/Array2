@@ -1,7 +1,7 @@
 Array2
 ======
 
-An implementation of Array in JavaScript without ever using a native JavaScript-Array. It has the highly creative title "Array2".
+An implementation of `Array` in JavaScript without ever using a native JavaScript-Array. It has the highly creative title "Array2".
 
 This is just a test, a proof of concept if you will: It's possible to create the functionality of a JavaScript-Array without using a native Array. It even works with Function.apply and everything! Just the bracket-notation `myArray[5]` won't change the length attribute.
 
