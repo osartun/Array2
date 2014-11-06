@@ -23,7 +23,7 @@ This is just a test, a proof of concept if you will: It's possible to create the
     
     // difference:
     squaredBrackets(5) // [5]
-    new Array(5) // [undefined × 5]
+    new Array2(5) // [undefined × 5]
     // If the Array2 constructor is called with only one argument 
     // and this argument is a positive integer, this integer is 
     // considered to indicate the length of the array
